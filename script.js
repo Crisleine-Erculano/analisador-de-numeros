@@ -17,6 +17,19 @@ function listar(n,lis){
         return false;
     }
 }
+  function adicionar() {
+    if(verificar(numero.value)&& !listar(numero.value, valores)){
+        valores.push();
+        let opitions = document.createElement('Option');
+        opitions.text = `Valor ${numero.value} adicionado.`;
+        select.appendChild(opitions);
+        res.innerHTML = '';
+     } else {
+        window.alert("valor inválido ou já consta.");
+     }
+    numero.value = '';
+    numero.focus();
+    }
     
 
 
