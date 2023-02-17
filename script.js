@@ -18,6 +18,16 @@ function listar(n, lis) {
         return false;
     }
 }
+document.addEventListener('keypress', function (e) {
+    if (e.keyCode == 13) {
+        console.log('apertou enter');
+        let submit = document.querySelector('#submit')
+        submit.click;
+        adicionar();
+    }
+
+}, false);
+
 function adicionar() {
     if (verificar(numero.value) && !listar(numero.value, valores)) {
         valores.push(Number(numero.value));
