@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,26 @@
     <title>Analisador de Números</title>
     <link rel="stylesheet" href="stylle.css">
 </head>
+
 <body>
-   
     <header>
         <h1>Analisador de Números</h1>
-    <section> 
-         <div>
-           <p>Número de 1 a 100 <input type="number" name="number" id="number">
-           <input type="button" value="Adicionar" onclick="adicionar()"></p> 
-
-         </div>
-         <div>
-            <select name="valores" id="selectValores" size = "10"></select>
-            <option value="adicione os números acima "></option>
-           
-            <input type="button" value="Finalizar" onclick="finalizar()">
-    
-         </div>
-         <div id="resultado">
-
-         </div>
-         
-     </section>   
+        <section>
+            <div>
+                <p>Número de 1 a 100 <input type="number" name="number" id="number">
+                    <input type="button" value="Adicionar" onclick="adicionar()">
+                </p>
+            </div>
+            <div>
+                <select name="valores" id="selectValores" size="10">
+                </select>
+                <input type="button" value="Finalizar" onclick="finalizar()">
+            </div>
+            <div id="resultado">
+            </div>
+        </section>
     </header>
-
     <script src="script.js"></script>
 </body>
+
 </html>
