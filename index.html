@@ -2,32 +2,39 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Números</title>
-    <link rel="stylesheet" href="stylle.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Analisador de Números</title>
+   <link rel="stylesheet" href="stylle.css">
 </head>
 
 <body>
-    <header>
-        <h1>Analisador de Números</h1>
-        <section>
-            <div>
-                <p>Número de 1 a 100 <input type="number" name="number" id="number">
-                    <input type="button" value="Adicionar" onclick="adicionar()">
-                </p>
-            </div>
-            <div>
-                <select name="valores" id="selectValores" size="10">
-                </select>
-                <input id="submit" type="button" value="Finalizar" onclick="finalizar()">
-            </div>
-            <div id="resultado">
-            </div>
-        </section>
-    </header>
-    <script src="script.js"></script>
+   <section>
+      <h1>Analisador de Números</h1>
+      <section>
+         <div>
+            <label for="number">Digite um Número de 1 a 100</label>
+            <input type="number" name="number" id="number">
+            
+            <label for="adicionar"></label>
+               <input type="button" value="Adicionar" onclick="adicionar()" id="adicionar"> 
+         </div>
+         <div>
+            <select name="valores" id="selectValores" size="10"></select>
+            
+            <label for="submit"></label>
+            <input type="button" value="Finalizar" onclick="finalizar()" id="submit">
+            
+            <label for="limpar"></label>
+            <input type="submit" value="Limpar" onclick="limpar()" id="limpar">
+         </div>
+         <div id="resultado">
+         
+         </div>
+      </section>
+   </section>
+   <script src="script.js"></script>
 </body>
 
 </html>

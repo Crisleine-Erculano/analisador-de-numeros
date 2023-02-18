@@ -61,6 +61,13 @@ function finalizar() {
         resultado.innerHTML += `<p>O menor valor encontrado é o número: ${menorValor}</p>`;
         resultado.innerHTML += `<p>a média calculada é: ${mediaNumeros}</p>`;
     }
+    
+}
+function limpar(){
+    valores.length = 0;
+    select.length = ''
+    resultado.innerHTML = '';
+    numero.focus();
 }
 
 
