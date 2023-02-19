@@ -3,6 +3,7 @@ var select = document.getElementById('selectValores');
 var resultado = document.getElementById('resultado');
 var valores = [];
 
+// Função verifica se o valor de entrada é um número e se é de 1 a 100.
 function verificar(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true;
@@ -11,6 +12,7 @@ function verificar(n) {
     }
 
 }
+// Função verifica se o número digitado já foi digitado antes.
 function listar(n, lis) {
     if (lis.indexOf(Number(n)) != -1) {
         return true;
@@ -18,6 +20,7 @@ function listar(n, lis) {
         return false;
     }
 }
+// Adicionando evento pra usar a tecla Enter.
 document.addEventListener('keypress', function (e) {
     if (e.keyCode == 13) {
         console.log('apertou enter');
@@ -28,6 +31,7 @@ document.addEventListener('keypress', function (e) {
 
 }, false);
 
+//Função adiciona número caso seje um número e não esteja na lista.
 function adicionar() {
     if (verificar(numero.value) && !listar(numero.value, valores)) {
         valores.push(Number(numero.value));
@@ -41,6 +45,7 @@ function adicionar() {
     numero.value = '';
     numero.focus();
 }
+// Função é ativada quando clicado o botão de finalizar.
 function finalizar() {
     if (valores.length == 0) {
         alert('Por favor digite um número de 1 a 100');
@@ -55,14 +60,15 @@ function finalizar() {
         valores.sort((a, b) => a - b)
         mediaNumeros = soma / valores.length;
         resultado.innerHTML += `<p> Os números digitados são: ${valores} </p>`
-        resultado.innerHTML += `<p>O total de números cadastrados é: ${valores.length}</p>`;
+        resultado.innerHTML += `<p>O total de números é: ${valores.length}</p>`;
         resultado.innerHTML += `<p>A soma dos valores é: ${soma}</p>`;
-        resultado.innerHTML += `<p>O maior valor encontrado é o número: ${maiorValor}</p>`;
-        resultado.innerHTML += `<p>O menor valor encontrado é o número: ${menorValor}</p>`;
+        resultado.innerHTML += `<p>O maior valor é o número: ${maiorValor}</p>`;
+        resultado.innerHTML += `<p>O menor valor é o número: ${menorValor}</p>`;
         resultado.innerHTML += `<p>a média calculada é: ${mediaNumeros}</p>`;
     }
     
 }
+// Função limpa os campos de entrada de números, o array e o select.
 function limpar(){
     valores.length = 0;
     select.length = ''

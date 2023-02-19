@@ -11,6 +11,7 @@ body{
     height: 100vh;
 
 }
+/* Estilização da section analisador */
 .analisador{
     background:#F2926B;
     border-radius: 10px;
@@ -27,14 +28,17 @@ body{
     width: 80vw;
     
 }
+/* Estilização da div adicionar */
 .analisador__adicionar{
     margin-bottom: 1.5rem;
 }
+/* Estilização do título */
 .analisador__titulo{
     font-size: 2rem;
     
     padding: 1.5rem 0;
 }
+/* Estilização da label */
 .analisador__texto{
     color: #004012;
     
@@ -48,6 +52,7 @@ body{
     text-align: center;
     text-transform: uppercase; 
 }
+/* Estilização do input de  números */
 .analisador__numeros{
     border: none;
     
@@ -62,6 +67,7 @@ body{
     
     width: 80%;
 }
+/* Estilização dos botões de Adicionar e Finalizar */
 .analisador__botao, .selecao__botao{
     background-color:  #400101;
     
@@ -76,8 +82,10 @@ body{
     padding: 10px 20px ;
     
     text-transform: uppercase;
+   
     width: 80%;
 }
+/* Estilização da div selecao */
 .selecao{
     align-items: center;
     display: flex;
@@ -86,6 +94,7 @@ body{
     width: 100%;
     
 }
+/* Estilização do Select */
 .selecao__valores{
     border: none;
 
@@ -104,6 +113,7 @@ body{
     width: 80%;
 
 }
+/* Estilização do botão de limpar */
 .selecao__limpar{
     background-color: #54BF1B  ;
     
@@ -122,6 +132,7 @@ body{
     
     width: 80%;
 }
+/* Estilização da div Resultados */
 .resultados{
     font-size: 1.5rem;
     
