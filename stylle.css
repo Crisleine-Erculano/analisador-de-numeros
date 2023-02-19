@@ -32,36 +32,103 @@ body{
 }
 .analisador__titulo{
     font-size: 2rem;
+    
     padding: 1.5rem 0;
 }
 .analisador__texto{
-    padding: 10px;
-    font-weight: bold;
     color: #004012;
-
-    text-transform: uppercase;
-    text-align: center;
+    
+    cursor: pointer;
+    
+    font-weight: bold;
     
     margin-top: 10px;
-    cursor: pointer;
-   
+    padding: 10px;
+    
+    text-align: center;
+    text-transform: uppercase; 
 }
 .analisador__numeros{
     border: none;
-    padding: 10px;
+    
+    color: #400101;
+    
+    font-size: 1.15rem;
+    font-weight: 500;
+    
+    padding: 10px 20px;
+    
+    outline: none;
+    
     width: 80%;
 }
-.analisador__botao{
+.analisador__botao, .selecao__botao{
     background-color:  #400101;
+    
     border: none;
     border-radius: 5px;
+    box-sizing: content-box;
     
     color: #54BF1B;
+    font-weight: bold;
+   
+    margin-top: 10px;
+    padding: 10px 20px ;
+    
+    text-transform: uppercase;
+    width: 80%;
+}
+.selecao{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+}
+.selecao__valores{
+    border: none;
+
+    color: #400101;
+
+    font-size:1.15rem ;
+    font-weight: 500;
+    
+    margin-bottom:1.5rem ;
+    padding: 1rem 0;
+    
+    outline: none;
+
+    text-align: center;
+    
+    width: 80%;
+
+}
+.selecao__limpar{
+    background-color: #54BF1B  ;
+    
+    border: none;
+    border-radius: 5px;
+    box-sizing: content-box;
+    
+    color: #400101;
+    
     font-weight: bold;
    
     padding: 10px 20px ;
     margin-top: 10px;
     
     text-transform: uppercase;
-    width: 90%;
+    
+    width: 80%;
+}
+.resultados{
+    font-size: 1.5rem;
+    
+    justify-content: center;
+
+    margin: 0 auto;
+    padding-top: 1rem;
+
+    text-align: justify;
 }
