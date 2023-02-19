@@ -3,7 +3,65 @@
     padding: 0;
 }
 body{
-    background-color: #F2926B;
-    color: #8d0606;
+    background-color: #BF4B1B;
+    color: #8D0606;
+    
+    display: flex;
+    
+    height: 100vh;
 
+}
+.analisador{
+    background:#F2926B;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    padding: 15px;
+    
+    text-align: center;
+    
+    width: 80vw;
+    
+}
+.analisador__adicionar{
+    margin-bottom: 1.5rem;
+}
+.analisador__titulo{
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+.analisador__texto{
+    padding: 10px;
+    font-weight: bold;
+    color: #004012;
+
+    text-transform: uppercase;
+    text-align: center;
+    
+    margin-top: 10px;
+    cursor: pointer;
+   
+}
+.analisador__numeros{
+    border: none;
+    padding: 10px;
+    width: 80%;
+}
+.analisador__botao{
+    background-color:  #400101;
+    border: none;
+    border-radius: 5px;
+    
+    color: #54BF1B;
+    font-weight: bold;
+   
+    padding: 10px 20px ;
+    margin-top: 10px;
+    
+    text-transform: uppercase;
+    width: 90%;
 }

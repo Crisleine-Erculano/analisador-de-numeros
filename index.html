@@ -11,28 +11,27 @@
 
 <body>
    <section class="analisador">
-      <h1>Analisador de Números</h1>
-      <section>
-         <div>
-            <label for="number">Digite um Número de 1 a 100</label>
-            <input type="number" name="number" id="number">
+         <div class="analisador__adicionar">
+            <h1 class="analisador__titulo">Analisador de Números</h1>
+            
+            <label class="analisador__texto"  for="number">Digite um Número de 1 a 100</label>
+            <input class="analisador__numeros" type="number" name="number" id="number">
             
             <label for="adicionar"></label>
-               <input type="button" value="Adicionar" onclick="adicionar()" id="adicionar"> 
+            <input class="analisador__botao" type="button" value="Adicionar" onclick="adicionar()" id="adicionar"> 
          </div>
-         <div>
-            <select name="valores" id="selectValores" size="10"></select>
+         <div class="selecao">
+            <select class="selecao__valores" name="valores" id="selectValores" size="10"></select>
             
             <label for="submit"></label>
-            <input type="button" value="Finalizar" onclick="finalizar()" id="submit">
+            <input class="selecao__botao" type="button" value="Finalizar" onclick="finalizar()" id="submit">
             
             <label for="limpar"></label>
-            <input type="submit" value="Limpar" onclick="limpar()" id="limpar">
+            <input class="selecao__limpar" type="submit" value="Limpar" onclick="limpar()" id="limpar">
          </div>
-         <div id="resultado">
+         <div class="resultados" id="resultado">
          
          </div>
-      </section>
    </section>
    <script src="script.js"></script>
 </body>
